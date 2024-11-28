@@ -10,16 +10,16 @@ class Config(object):
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "tony_terabot") # ⚠️ Required
    
     # database config
-    DB_URL  = os.environ.get("DB_URL","")  # ⚠️ Required
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://pbot:pbot@pbot.h5n6l.mongodb.net/?retryWrites=true&w=majority&appName=pbot")  # ⚠️ Required
  
     # other configs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     TG_MAX_SIZE = 2040108421
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()] # ⚠️ Required
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1352497419').split()] # ⚠️ Required
     FORCE_SUB_TEXT = os.environ.get('FORCE_SUB_TEXT', "**Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ɪɴ ᴏᴜʀ Bᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ sᴏ ʏᴏᴜ ᴅᴏɴ'ᴛ ɢᴇᴛ ᴛʜᴇ ғɪʟᴇ...\n\nIғ ʏᴏᴜ ᴡᴀɴᴛ ᴛʜᴇ ғɪʟᴇ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ '❆ Jᴏɪɴ Oᴜʀ Bᴀᴄᴋ-Uᴘ Cʜᴀɴɴᴇʟ ❆' ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴀɴᴅ ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ, ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ '↻ Tʀʏ Aɢᴀɪɴ' ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ...\n\nTʜᴇɴ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ᴛʜᴇ ғɪʟᴇs...**")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "")) # ⚠️ Required
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002146782406")) # ⚠️ Required
 
     
     # Mega User Account ⚠️ Only Set When you have Pro or Enterprise Mega Account
